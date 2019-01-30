@@ -1,6 +1,0 @@
-framework module Pods_AltSouceTest {
-  umbrella header "Pods-AltSouceTest-umbrella.h"
-
-  export *
-  module * { export * }
-}

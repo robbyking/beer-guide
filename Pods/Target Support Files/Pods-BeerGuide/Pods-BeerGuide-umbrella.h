@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_AltSouceTestVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_AltSouceTestVersionString[];
+FOUNDATION_EXPORT double Pods_BeerGuideVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_BeerGuideVersionString[];
 

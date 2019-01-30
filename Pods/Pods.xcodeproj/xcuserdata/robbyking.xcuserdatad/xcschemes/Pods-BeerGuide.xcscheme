@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C148DBF0F54CDB074CE218B93191B2E3"
-               BuildableName = "Pods_AltSouceTest.framework"
-               BlueprintName = "Pods-AltSouceTest"
+               BlueprintIdentifier = "5A7F437A23951CDC5C72FE312FC75F17"
+               BuildableName = "Pods_BeerGuide.framework"
+               BlueprintName = "Pods-BeerGuide"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C148DBF0F54CDB074CE218B93191B2E3"
-            BuildableName = "Pods_AltSouceTest.framework"
-            BlueprintName = "Pods-AltSouceTest"
+            BlueprintIdentifier = "5A7F437A23951CDC5C72FE312FC75F17"
+            BuildableName = "Pods_BeerGuide.framework"
+            BlueprintName = "Pods-BeerGuide"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
