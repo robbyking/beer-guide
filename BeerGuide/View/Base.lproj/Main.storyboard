@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U2j-IU-ctH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Beer List View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="BeerListViewController" customModule="AltSouceTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e6S-dZ-xcG">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e6S-dZ-xcG" secondAttribute="trailing" id="BDy-HG-9F8"/>
+                            <constraint firstItem="e6S-dZ-xcG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZSO-M7-R6q"/>
+                            <constraint firstItem="e6S-dZ-xcG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rJf-nQ-0tv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="e6S-dZ-xcG" secondAttribute="bottom" id="yFU-pz-fbJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bOK-H4-qps"/>
+                    <connections>
+                        <outlet property="beerListTableView" destination="e6S-dZ-xcG" id="Jog-Ej-jeZ"/>
+                        <segue destination="BFT-XX-od3" kind="show" identifier="ShowBeerDetailSegue" id="muc-do-ujn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992.79999999999995" y="26.53673163418291"/>
+        </scene>
+        <!--Beer Detail View Controller-->
+        <scene sceneID="6qT-nd-7mV">
+            <objects>
+                <viewController id="BFT-XX-od3" customClass="BeerDetailViewController" customModule="AltSouceTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sPQ-e5-02U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ro1-he-xpI" userLabel="Header Background">
+                                <rect key="frame" x="0.0" y="64" width="375" height="250"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccz-aL-Nuc">
+                                        <rect key="frame" x="20" y="20" width="335" height="160"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="160" id="nRa-CR-TTI" userLabel="height = 160"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum Dolor Sit." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqc-YZ-KY6">
+                                        <rect key="frame" x="20" y="190" width="335" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="UH9-yL-MLY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.74509803921568629" green="0.21176470588235294" blue="0.043137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="fqc-YZ-KY6" firstAttribute="trailing" secondItem="ccz-aL-Nuc" secondAttribute="trailing" id="3dx-0k-KrB"/>
+                                    <constraint firstItem="fqc-YZ-KY6" firstAttribute="leading" secondItem="ccz-aL-Nuc" secondAttribute="leading" id="47m-Yl-L4e"/>
+                                    <constraint firstAttribute="height" constant="250" id="AFF-Ao-z2l"/>
+                                    <constraint firstItem="fqc-YZ-KY6" firstAttribute="top" secondItem="ccz-aL-Nuc" secondAttribute="bottom" constant="10" id="Ncn-HX-zdn"/>
+                                    <constraint firstItem="ccz-aL-Nuc" firstAttribute="leading" secondItem="ro1-he-xpI" secondAttribute="leading" constant="20" id="RFJ-bJ-foy"/>
+                                    <constraint firstItem="ccz-aL-Nuc" firstAttribute="trailing" secondItem="ro1-he-xpI" secondAttribute="trailing" constant="-20" id="YQc-pN-0ku"/>
+                                    <constraint firstItem="ccz-aL-Nuc" firstAttribute="top" secondItem="ro1-he-xpI" secondAttribute="top" constant="20" id="zGa-m1-9Fg"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="yhm-wx-xPe">
+                                <rect key="frame" x="20" y="334" width="335" height="143.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yhm-wx-xPe" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="XlV-Ov-9dm" secondAttribute="bottom" constant="-20" id="FRJ-Kd-cza"/>
+                            <constraint firstItem="ro1-he-xpI" firstAttribute="leading" secondItem="XlV-Ov-9dm" secondAttribute="leading" id="ISI-qy-nop"/>
+                            <constraint firstItem="yhm-wx-xPe" firstAttribute="top" secondItem="ro1-he-xpI" secondAttribute="bottom" constant="20" id="KWs-7x-Y5f"/>
+                            <constraint firstItem="ro1-he-xpI" firstAttribute="top" secondItem="XlV-Ov-9dm" secondAttribute="top" id="hWF-mC-i7Z"/>
+                            <constraint firstItem="yhm-wx-xPe" firstAttribute="trailing" secondItem="ccz-aL-Nuc" secondAttribute="trailing" id="iXF-4v-fiO"/>
+                            <constraint firstItem="yhm-wx-xPe" firstAttribute="leading" secondItem="ccz-aL-Nuc" secondAttribute="leading" id="oCJ-OM-riY"/>
+                            <constraint firstItem="ro1-he-xpI" firstAttribute="trailing" secondItem="XlV-Ov-9dm" secondAttribute="trailing" id="zaz-7c-NAx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XlV-Ov-9dm"/>
+                    </view>
+                    <connections>
+                        <outlet property="descLabel" destination="yhm-wx-xPe" id="Avn-pW-CId"/>
+                        <outlet property="nameLabel" destination="ccz-aL-Nuc" id="C1z-Ju-yGS"/>
+                        <outlet property="taglineLabel" destination="fqc-YZ-KY6" id="dch-pI-HUt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jAW-sH-EY3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1773.5999999999999" y="26.53673163418291"/>
+        </scene>
+        <!--Beers-->
+        <scene sceneID="8Gf-ek-82c">
+            <objects>
+                <navigationController title="Beers" automaticallyAdjustsScrollViewInsets="NO" id="U2j-IU-ctH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SsT-cX-Uof">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="El5-ri-scE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YwG-h7-B1P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+</document>
